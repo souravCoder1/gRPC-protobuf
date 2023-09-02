@@ -19,7 +19,7 @@ public class PerformanceTest {
         // json
         Runnable json = () -> {
             ObjectMapper mapper = new ObjectMapper();
-            byte[] serializedJPerson = new byte[0];
+            byte[] serializedJPerson;
             try {
                 serializedJPerson = mapper.writeValueAsBytes(person);
                 JPerson deserializedJPerson = mapper.readValue(serializedJPerson, JPerson.class);
@@ -49,7 +49,7 @@ public class PerformanceTest {
 
     private static void runPerformanceTest(Runnable runnable, String method) {
         long time1 = System.currentTimeMillis();
-        long time2 = 0l;
+        long time2 = 0L;
         for (int i = 0; i < 1_000_000; i++) {
             runnable.run();
             time2 = System.currentTimeMillis();
