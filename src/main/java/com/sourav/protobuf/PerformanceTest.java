@@ -8,6 +8,8 @@ import com.sourav.protobuf.models.Person;
 
 import java.io.IOException;
 
+
+// REST vs gRPC
 public class PerformanceTest {
     public static void main(String[] args) {
         JPerson person = new JPerson();
