@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="791e6ad1-adbf-41d7-a918-0f3e23496e98" name="Changes" comment="code">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sourav/protobuf/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/proto/person.proto" afterDir="false" />
+    <list default="true" id="791e6ad1-adbf-41d7-a918-0f3e23496e98" name="Changes" comment="add model class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sourav/protobuf/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sourav/protobuf/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +41,11 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn compile" />
@@ -89,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693628654334</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add model class">
+      <option name="closed" value="true" />
+      <created>1693666630699</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693666630699</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,6 +114,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="code" />
-    <option name="LAST_COMMIT_MESSAGE" value="code" />
+    <MESSAGE value="add model class" />
+    <option name="LAST_COMMIT_MESSAGE" value="add model class" />
   </component>
 </project>
