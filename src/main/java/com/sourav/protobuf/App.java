@@ -3,7 +3,6 @@ package com.sourav.protobuf;
 import com.sourav.protobuf.models.Person;
 
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
