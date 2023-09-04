@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="791e6ad1-adbf-41d7-a918-0f3e23496e98" name="Changes" comment="gRPC vs REST">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sourav/protobuf/PerformanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sourav/protobuf/PerformanceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/user.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sourav/protobuf/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sourav/protobuf/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/person.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/person.proto" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +59,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.PerformanceTest">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sourav.protobuf.App" />
       <module name="protobuf" />
@@ -85,8 +88,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PerformanceTest" />
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.PerformanceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693677100951</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="gRPC vs REST">
+      <option name="closed" value="true" />
+      <created>1693677199110</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693677199110</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
