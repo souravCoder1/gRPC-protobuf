@@ -12,6 +12,7 @@ message Car {
     string make = 1;
     string model = 2;
     int32 year = 3;
+    BodyStyle body_style = 4;
 }
 message User {
     string name = 1;
@@ -22,4 +23,11 @@ message User {
 
 message Dealer {
     map<int32, Car> model = 1;
+}
+
+enum BodyStyle {
+    UNKNOWN = 0; //Default Value
+     SEDAN = 1;
+    COUPE = 2;
+    SUV = 3;
 }

@@ -1,0 +1,11 @@
+syntax = "proto3";
+package packages.payment;
+
+import "packages/balance/Balance.proto";
+
+message Payment {
+    oneof data {
+        bool login_status = 1;
+        balance.Balance balance = 2;
+    }
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package packages.balance;
+
+message Balance {
+    double TotalValue = 1;
+    double CashAvailableForTrading = 2;
+}
+

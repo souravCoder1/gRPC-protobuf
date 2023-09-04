@@ -34,11 +34,13 @@ public class App {
                 .setMake("Honda")
                 .setModel("Civic")
                 .setYear(2005)
+                .setBodyStyle(BodyStyle.COUPE)
                 .build();
 
         Car accord = Car.newBuilder()
                 .setMake("Honda")
                 .setModel("Civic")
+                .setBodyStyle(BodyStyle.SUV)
                 .setYear(2005)
                 .build();
 
@@ -62,9 +64,13 @@ public class App {
                 .build();
 
         System.out.println(dealer.getModelCount());
-        System.out.println(dealer.getModelOrThrow(2001));
+        System.out.println(dealer.getModelOrThrow(2005));
         System.out.println(dealer.getModelOrDefault(2001, accord));
         dealer.getModelMap(); // actual Map
+        System.out.println(user.hasAddress()); // check default value
+
+
+        System.out.println(dealer.getModelOrThrow(2005).getBodyStyle());
 
         System.out.println(person1);
         System.out.println(person2);
