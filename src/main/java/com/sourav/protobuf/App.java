@@ -1,5 +1,6 @@
 package com.sourav.protobuf;
 
+import com.google.protobuf.Int32Value;
 import com.sourav.protobuf.models.*;
 
 import java.io.IOException;
@@ -13,13 +14,13 @@ import java.util.List;
 public class App {
     public static void main(String[] args) throws IOException {
         Person person1 = Person.newBuilder()
-                .setId(10)
+                .setId(Int32Value.newBuilder().setValue(10).build())
                 .setName("Sourav")
                 .setAddress("New York")
                 .build();
 
         Person person2 = Person.newBuilder()
-                .setId(10)
+                .setId(Int32Value.newBuilder().setValue(20).build())
                 .setName("Sourav")
                 .setAddress("New York")
                 .build();

@@ -2,6 +2,7 @@ package com.sourav.protobuf;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.protobuf.Int32Value;
 import com.google.protobuf.InvalidProtocolBufferException;
 import com.sourav.protobuf.model.JPerson;
 import com.sourav.protobuf.models.Person;
@@ -22,6 +23,7 @@ public class PerformanceTest {
             byte[] serializedJPerson;
             try {
                 serializedJPerson = mapper.writeValueAsBytes(person);
+                System.out.println(serializedJPerson.length);
                 JPerson deserializedJPerson = mapper.readValue(serializedJPerson, JPerson.class);
             } catch (JsonProcessingException e) {
                 throw new RuntimeException(e);
@@ -32,11 +34,12 @@ public class PerformanceTest {
         // protobuf
         Person serializedPerson = Person.newBuilder()
                 .setName("sam")
-                .setId(10)
+                .setId(Int32Value.newBuilder().setValue(10).build())
                 .build();
         Runnable proto = () -> {
             try {
                 byte[] bytes = serializedPerson.toByteArray();
+                System.out.println(bytes.length);
                 Person deserializedPerson = Person.parseFrom(bytes);
             } catch (InvalidProtocolBufferException e) {
                 e.printStackTrace();
@@ -50,7 +53,7 @@ public class PerformanceTest {
     private static void runPerformanceTest(Runnable runnable, String method) {
         long time1 = System.currentTimeMillis();
         long time2 = 0L;
-        for (int i = 0; i < 1_000_000; i++) {
+        for (int i = 0; i < 1_00_000; i++) {
             runnable.run();
             time2 = System.currentTimeMillis();
         }

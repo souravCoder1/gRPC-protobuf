@@ -1,10 +1,14 @@
 syntax = "proto3";
 
+import "google/protobuf/wrappers.proto";
 option java_multiple_files = true;
 option java_package = "com.sourav.protobuf.models";
 
 message Person {
-    string name = 1;
-    int32 id = 2;
+    // 1- 15 - 1 byte
+    // 16 - 2047 - 2 bytes
+    string name = 1; //this is Tag, it can be any number
+    google.protobuf.Int32Value id = 2;
+    //int32 id = 2;
     string address = 3;
 }
