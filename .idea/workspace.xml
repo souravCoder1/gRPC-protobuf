@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="791e6ad1-adbf-41d7-a918-0f3e23496e98" name="Changes" comment="One Of">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+    <list default="true" id="791e6ad1-adbf-41d7-a918-0f3e23496e98" name="Changes" comment="wrapper">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sourav/protobuf/VersionCompatibilityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/proto/packages/television.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sourav/protobuf/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sourav/protobuf/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sourav/protobuf/PerformanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sourav/protobuf/PerformanceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/proto/person.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/person.proto" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +66,7 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.PerformanceTest">
+  <component name="RunManager" selected="Application.VersionCompatibilityTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sourav.protobuf.App" />
       <module name="protobuf" />
@@ -107,8 +106,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VersionCompatibilityTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sourav.protobuf.VersionCompatibilityTest" />
+      <module name="protobuf" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sourav.protobuf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.VersionCompatibilityTest" />
         <item itemvalue="Application.PerformanceTest" />
         <item itemvalue="Application.OneOfCredentials" />
         <item itemvalue="Application.App" />
@@ -196,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693842329070</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="wrapper">
+      <option name="closed" value="true" />
+      <created>1694274207845</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1694274207845</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,6 +238,7 @@
     <MESSAGE value="gRPC vs REST" />
     <MESSAGE value="Map" />
     <MESSAGE value="One Of" />
-    <option name="LAST_COMMIT_MESSAGE" value="One Of" />
+    <MESSAGE value="wrapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="wrapper" />
   </component>
 </project>

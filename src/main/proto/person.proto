@@ -5,10 +5,18 @@ option java_multiple_files = true;
 option java_package = "com.sourav.protobuf.models";
 
 message Person {
-    // 1- 15 - 1 byte
+    // 1- 15 - 1 byte, use for frequently use fields takes less space, less network traffic
     // 16 - 2047 - 2 bytes
     string name = 1; //this is Tag, it can be any number
     google.protobuf.Int32Value id = 2;
     //int32 id = 2;
     string address = 3;
 }
+
+/*
+    "name": "sam"
+    "age": 10
+
+    1=sam
+    2=10
+*/

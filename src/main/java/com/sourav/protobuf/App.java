@@ -79,10 +79,13 @@ public class App {
 
         System.out.println("Check Equal: " + person1.equals(person2));
 
-        // Serialization & Deserialization
+        // Serialization
 
         Path path = Paths.get("person_byte.txt");
         Files.write(path, person1.toByteArray());
+
+        // Deserialization
+
         byte[] sezPerson = Files.readAllBytes(path);
         Person desezPerson = Person.parseFrom(sezPerson);
         System.out.println(Arrays.toString(sezPerson));
